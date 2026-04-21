@@ -20,9 +20,13 @@ coverage
 __azurite_db_blob__.json
 __azurite_db_blob_extent__.json
 android/app/release
+ios/build
 ios/App/build
 *.local
 .node-localstorage
+.tmp-playwright
+test-results
+supabase/.temp
 
 # Editor directories and files
 .vscode/*

@@ -1,1 +1,0 @@
-import{n as e}from"./jobItemsService-TSR0DmDI.js";var t=t=>t.pricing_mode===`itemized`&&t.job_items&&t.job_items.length>0?e(t.job_items,t.discount_percent||0):t.rate;export{t};

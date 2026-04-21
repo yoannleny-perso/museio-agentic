@@ -1,1 +1,0 @@
-import{a as e}from"./rolldown-runtime-COnpUsM8.js";import{m as t}from"./charts-vendor-cqQINDol.js";import{bn as n}from"./react-vendor-BKyA6wSY.js";import{t as r}from"./auth-C1I7U2fj.js";var i=e(t(),1),a=(e=`/`)=>{let{user:t,loading:a}=r(),o=n();return(0,i.useEffect)(()=>{!a&&!t&&o(`/auth`)},[t,a,o]),{user:t,loading:a}};export{a as t};

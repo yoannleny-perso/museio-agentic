@@ -1,1 +1,0 @@
-import{r as e}from"./vendor-Df0EAm1Y.js";export{e as BrowserWeb};
