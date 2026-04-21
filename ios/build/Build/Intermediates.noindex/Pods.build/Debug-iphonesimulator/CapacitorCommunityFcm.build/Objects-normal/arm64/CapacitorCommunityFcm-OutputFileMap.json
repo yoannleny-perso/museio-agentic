@@ -1,0 +1,19 @@
+{
+  "" : {
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/CapacitorCommunityFcm-primary.dia",
+    "emit-module-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/CapacitorCommunityFcm-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/CapacitorCommunityFcm-primary-emit-module.dia",
+    "pch" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/CapacitorCommunityFcm-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/CapacitorCommunityFcm-primary.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor-community/fcm/ios/Plugin/Plugin.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.o",
+    "llvm-bc" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.bc",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb.swiftdeps",
+    "swiftmodule" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCommunityFcm.build/Objects-normal/arm64/Plugin-788ce89e5ec943639056b898774b3dcb~partial.swiftmodule"
+  }
+}

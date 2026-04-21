@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299664868002",
+    "project_id": "museio-7bf31",
+    "storage_bucket": "museio-7bf31.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299664868002:android:48477146e30e3eefdc4dfb",
+        "android_client_info": {
+          "package_name": "com.audaciangroup.museio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFXsbNGRjZL74_gQAIxQlgN8iJfNGb-MI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

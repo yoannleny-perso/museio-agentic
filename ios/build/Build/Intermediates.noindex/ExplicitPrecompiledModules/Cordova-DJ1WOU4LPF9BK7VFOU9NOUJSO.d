@@ -1,0 +1,22 @@
+moduledependenciestarget: \
+  /Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorCordova.build/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/CapacitorCordova.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.4.sdk/System/Library/Frameworks/UIKit.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.4.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/AppDelegate.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVViewController.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDV.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVAvailability.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPlugin.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginResult.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegate.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVInvokedUrlCommand.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.4.sdk/System/Library/Frameworks/WebKit.framework/Modules/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVURLProtocol.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVScreenOrientationDelegate.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVWebViewProcessPoolFactory.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVCommandDelegateImpl.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPluginManager.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVConfigParser.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/CDVPlugin+Resources.h \
+  /Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/CapacitorCordova/CapacitorCordova/Classes/Public/NSDictionary+CordovaPreferences.h

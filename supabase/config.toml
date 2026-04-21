@@ -1,0 +1,34 @@
+project_id = "qsdfsycxaucxpbomjijg"
+
+[db]
+major_version = 15
+
+[functions.send-invoice-v2]
+verify_jwt = true
+
+[functions.stripe-webhook]
+verify_jwt = false
+
+[functions.get-booking-availability]
+verify_jwt = false
+
+[functions.submit-booking-request]
+verify_jwt = false
+
+[functions.send-booking-response]
+verify_jwt = false
+
+[functions.booking-response]
+verify_jwt = false
+
+[functions.send-push-notification]
+verify_jwt = true
+
+[functions.stripe-oauth-connect]
+verify_jwt = true
+
+[functions.stripe-oauth-callback]
+verify_jwt = false
+
+[functions.send-invoice-reminders]
+verify_jwt = false

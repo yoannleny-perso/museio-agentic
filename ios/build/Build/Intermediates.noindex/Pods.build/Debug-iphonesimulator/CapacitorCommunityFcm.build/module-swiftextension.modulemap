@@ -1,0 +1,4 @@
+
+module CapacitorCommunityFcm.Swift {
+  header "CapacitorCommunityFcm-Swift.h"
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <!-- The name of your app -->
+    <string name="app_name">Museio</string>
+
+    <!-- Title for your main activity (usually unused in modern apps) -->
+    <string name="title_activity_main">Museio</string>
+
+    <!-- (Optional) Used if referenced in code or manifest -->
+    <string name="package_name">com.audaciangroup.museio</string>
+
+    <!-- (Optional) Custom URL scheme for deep linking -->
+    <!--<string name="custom_url_scheme">museio</string> -->
+</resources>
+

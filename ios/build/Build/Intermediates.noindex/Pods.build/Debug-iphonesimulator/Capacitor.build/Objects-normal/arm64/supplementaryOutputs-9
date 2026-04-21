@@ -1,0 +1,30 @@
+{
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/PluginConfig.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/PluginConfig.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/PluginConfig.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/PluginConfig.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/PluginConfig.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/PluginConfig.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/Router.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Router.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Router.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Router.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Router.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Router.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/TmpViewController.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/TmpViewController.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/TmpViewController.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/TmpViewController.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/TmpViewController.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/TmpViewController.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/UIColor.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/UIColor.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/UIColor.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/UIColor.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/UIColor.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/UIColor.swiftdeps"
+  }
+}

@@ -1,0 +1,14 @@
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatController.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/_ObjC_HeartbeatsPayload.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/Utilities/AtomicBox.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/Utilities/FIRAllocatedUnfairLock.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Heartbeat.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatController.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatLoggingTestUtils.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsBundle.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatsPayload.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/HeartbeatStorage.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/RingBuffer.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/Storage.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/StorageFactory.swift
+/Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseCoreInternal/FirebaseCore/Internal/Sources/HeartbeatLogging/WeakContainer.swift

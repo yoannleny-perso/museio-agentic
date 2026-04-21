@@ -1,0 +1,29 @@
+{
+  "" : {
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/CapacitorPushNotifications-primary.dia",
+    "emit-module-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/CapacitorPushNotifications-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/CapacitorPushNotifications-primary-emit-module.dia",
+    "pch" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/CapacitorPushNotifications-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/CapacitorPushNotifications-primary.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/push-notifications/ios/Sources/PushNotificationsPlugin/PushNotificationsHandler.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.o",
+    "llvm-bc" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.bc",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler.swiftdeps",
+    "swiftmodule" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsHandler~partial.swiftmodule"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/push-notifications/ios/Sources/PushNotificationsPlugin/PushNotificationsPlugin.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.o",
+    "llvm-bc" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.bc",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin.swiftdeps",
+    "swiftmodule" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPushNotifications.build/Objects-normal/arm64/PushNotificationsPlugin~partial.swiftmodule"
+  }
+}

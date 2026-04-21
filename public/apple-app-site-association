@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["79Y8P4HUMQ.com.audaciangroup.museio"],
+        "components": [{ "/": "/*" }]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["79Y8P4HUMQ.com.audaciangroup.museio"]
+  },
+  "appclips": { "apps": [] }
+}

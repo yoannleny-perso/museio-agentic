@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap'); /* Adding Emerald-like font */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 255 78% 80%;
+
+  --museio-purple: 255 78% 80%;
+
+  --radius: 0.5rem;
+
+  /* Safe area insets for iOS devices */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+
+  --app-shell-gutter: clamp(1rem, 2.5vw, 2rem);
+  --app-shell-page-max-width: 44rem;
+  --app-shell-wide-max-width: 58rem;
+  --app-shell-form-max-width: 62rem;
+  --app-shell-tabbar-max-width: 42rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    scrollbar-width: none; /* Firefox */
+  }
+  body, html, #root {
+    @apply bg-slate-50 text-foreground;
+    font-size: 16px;
+    /* Only keep top and bottom safe area padding - remove side padding */
+    /*padding-top: var(--safe-area-inset-top);*/
+    padding-bottom: var(--safe-area-inset-bottom);
+
+    height: 100%;
+  }
+  
+  /* Hide scrollbars for all elements */
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  /* Set default font size for form elements */
+  input, textarea, select, button {
+    font-size: 16px;
+  }
+}
+
+.font-signature {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-emerald {
+  font-family: 'Emilys Candy', cursive;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Apply hide-scrollbar to common scrollable elements */
+.overflow-auto, 
+.overflow-y-auto, 
+.overflow-x-auto,
+.overflow-scroll, 
+.overflow-y-scroll, 
+.overflow-x-scroll {
+  @apply hide-scrollbar;
+}
+
+/* Smooth scrolling for all scrollable elements */
+.scroll-smooth {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 6px 16px -4px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced card styling */
+.card-elegant {
+  @apply bg-white border border-gray-100/60 rounded-xl shadow-sm hover:shadow-md transition-all duration-300;
+  background: linear-gradient(to bottom, #ffffff, #fafafa);
+}
+
+.input-field {
+  @apply rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background file:border-0 file:bg-transparent file:text-base file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-museio-purple-light focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+.primary-button {
+  @apply inline-flex items-center justify-center rounded-md text-base font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2;
+}
+
+/* Calendar day styling */
+.calendar-day {
+  @apply h-9 w-9 rounded-full flex items-center justify-center text-base hover:bg-gray-100;
+}
+
+.calendar-day.today {
+  background: linear-gradient(135deg, #D6BCFA 0%, #9b87f5 100%);
+  @apply text-white shadow-sm;
+}
+
+.calendar-day.selected {
+  background: linear-gradient(135deg, #8B5CF6 0%, #6E59A5 100%);
+  @apply text-white shadow-md transform scale-105 transition-all duration-200;
+}
+
+.calendar-day.booked {
+  @apply border-2 border-museio-purple;
+}
+
+.calendar-day.past-booked {
+  @apply border-2 border-gray-200 text-gray-400;
+}
+
+/* Mobile container - enhanced with safe area insets */
+.mobile-container {
+  @apply flex w-full flex-col bg-slate-50;
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.web-container {
+  @apply flex w-full flex-col bg-slate-50;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.mobile-content {
+  @apply flex-1 overflow-y-auto hide-scrollbar scroll-smooth;
+  padding-left: var(--app-shell-gutter);
+  padding-right: var(--app-shell-gutter);
+  padding-bottom: calc(5.5rem + var(--safe-area-inset-bottom));
+}
+
+.portfolio-route-content {
+  @apply flex-1 overflow-y-auto hide-scrollbar scroll-smooth;
+  padding-bottom: calc(5.5rem + var(--safe-area-inset-bottom));
+}
+
+.mobile-container .mobile-content {
+  padding-top: calc(1rem + var(--safe-area-inset-top));
+}
+
+.mobile-container .portfolio-route-content {
+  padding-top: calc(1rem + var(--safe-area-inset-top));
+}
+
+.web-container .mobile-content {
+  padding-top: 1rem;
+}
+
+.web-container .portfolio-route-content {
+  padding-top: 1rem;
+}
+
+.form-route-content {
+  @apply flex-1 overflow-hidden;
+  min-height: 0;
+}
+
+.app-page-shell,
+.app-page-shell-narrow,
+.app-page-shell-wide,
+.app-page-shell-form {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-page-shell,
+.app-page-shell-narrow {
+  max-width: var(--app-shell-page-max-width);
+}
+
+.app-page-shell-wide {
+  max-width: var(--app-shell-wide-max-width);
+}
+
+.app-page-shell-form {
+  max-width: var(--app-shell-form-max-width);
+}
+
+.app-header-shell,
+.app-header-shell-wide {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header-frame {
+  padding-left: var(--app-shell-gutter);
+  padding-right: var(--app-shell-gutter);
+}
+
+.app-header-shell {
+  max-width: var(--app-shell-page-max-width);
+}
+
+.app-header-shell-wide {
+  max-width: var(--app-shell-wide-max-width);
+}
+
+/* Fixed header styling */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 20;
+  padding-top: var(--safe-area-inset-top);
+  padding-left: var(--app-shell-gutter);
+  padding-right: var(--app-shell-gutter);
+  pointer-events: none;
+}
+
+.fixed-header > * {
+  pointer-events: auto;
+}
+
+/* Enhanced fixed bottom container with proper safe area handling */
+.fixed-bottom-container {
+  @apply fixed bottom-0 left-0 right-0 bg-background py-4 border-t shadow-md z-10;
+  /* Ensure proper spacing with safe area insets */
+  padding-bottom: calc(1rem + var(--safe-area-inset-bottom));
+  background-color: #ffffff;
+}
+
+/* TabBar specific safe area handling - standardized positioning */
+.tabbar-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.web-container .tabbar-container {
+  padding-left: var(--app-shell-gutter);
+  padding-right: var(--app-shell-gutter);
+  padding-bottom: calc(1rem + var(--safe-area-inset-bottom));
+}
+
+.mobile-container .tabbar-container {
+  padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.tabbar-content {
+  width: 100%;
+  max-width: var(--app-shell-tabbar-max-width);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 30px -18px rgba(15, 23, 42, 0.28);
+  border-radius: 1.5rem;
+  border: 1px solid rgba(221, 220, 231, 0.9);
+  height: 4.25rem;
+  padding-left: var(--safe-area-inset-left);
+  padding-right: var(--safe-area-inset-right);
+  backdrop-filter: blur(18px);
+  pointer-events: auto;
+  overflow: hidden;
+}
+
+.mobile-container .tabbar-content {
+  max-width: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0.9rem 0.9rem 0 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.web-container .tabbar-content {
+  margin-bottom: 0;
+}
+
+/* Ensure space above TabBar for content */
+.pb-tabbar {
+  padding-bottom: calc(4rem + var(--safe-area-inset-bottom)); /* TabBar height plus safe area */
+}
+
+/* Gradient text for MUSEIO header */
+.gradient-text {
+  @apply text-museio-purple;
+  font-weight: 700;
+}
+
+/* Standard content padding to match TabBar horizontal padding */
+.content-standard-padding {
+  /*@apply mx-6;*/
+}
+
+.safe-area-bottom {
+  padding-bottom: var(--safe-area-inset-bottom);
+  background-color: white;
+}
+
+.toast-viewport {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* Or use top/left/center depending on your desired position */
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 100vw;
+  width: fit-content;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent; /* remove tap highlight */
+  touch-action: manipulation; /* optimize for taps */
+}
+
+/* Enhanced 3D Shadow Effects for Booking Request Cards */
+.booking-card-shadow-base {
+  box-shadow: 
+    0 6px 12px -3px hsl(var(--primary) / 0.15),
+    0 12px 24px -6px hsl(var(--foreground) / 0.12),
+    0 24px 48px -12px hsl(var(--foreground) / 0.08),
+    inset 0 1px 0 0 hsl(var(--background) / 0.8);
+  border-radius: 12px;
+  background: linear-gradient(145deg, hsl(var(--background)), hsl(var(--background) / 0.98));
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.booking-card-shadow-hover {
+  box-shadow: 
+    0 12px 24px -6px hsl(var(--primary) / 0.2),
+    0 24px 48px -12px hsl(var(--foreground) / 0.16),
+    0 48px 96px -24px hsl(var(--foreground) / 0.12),
+    inset 0 1px 0 0 hsl(var(--background) / 0.9);
+}
+
+.booking-card-shadow-pending {
+  box-shadow: 
+    0 6px 12px -3px hsl(0 65% 70% / 0.2),
+    0 12px 24px -6px hsl(var(--foreground) / 0.12),
+    0 24px 48px -12px hsl(0 65% 70% / 0.1),
+    inset 0 1px 0 0 hsl(var(--background) / 0.8);
+  border-left: 6px solid hsl(0 65% 75%);
+  border-radius: 12px;
+  background: linear-gradient(145deg, hsl(var(--background)), hsl(0 65% 92% / 0.02));
+}
+
+
+.booking-card-shadow-quoted {
+  box-shadow: 
+    0 6px 12px -3px hsl(120 60% 30% / 0.2),
+    0 12px 24px -6px hsl(var(--foreground) / 0.12),
+    0 24px 48px -12px hsl(120 60% 30% / 0.1),
+    inset 0 1px 0 0 hsl(var(--background) / 0.8);
+  border-left: 6px solid hsl(120 60% 30%);
+  border-radius: 12px;
+  background: linear-gradient(145deg, hsl(var(--background)), hsl(120 60% 30% / 0.02));
+}
+
+
+.booking-card-shadow-declined {
+  box-shadow: 
+    0 6px 12px -3px hsl(0 84% 60% / 0.2),
+    0 12px 24px -6px hsl(var(--foreground) / 0.12),
+    0 24px 48px -12px hsl(0 84% 60% / 0.1),
+    inset 0 1px 0 0 hsl(var(--background) / 0.8);
+  border-left: 6px solid hsl(0 84% 60%);
+  border-radius: 12px;
+  background: linear-gradient(145deg, hsl(var(--background)), hsl(0 84% 60% / 0.02));
+}
+
+/* Badge Colors - Matching Card Colors */
+.badge-pending-bg {
+  background-color: hsl(0 65% 96%);
+}
+
+.badge-pending-text {
+  color: hsl(0 65% 45%);
+}
+
+.badge-pending-border {
+  border-color: hsl(0 65% 85%);
+}
+
+/* New Request Pulsing Animation */
+.new-request-pulse {
+  animation: new-request-pulse 2s ease-in-out infinite;
+}
+
+@keyframes new-request-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(32 75% 55% / 0.7);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 4px hsl(32 75% 55% / 0);
+  }
+}
+
+/* iOS Capacitor specific fixes */
+@supports (-webkit-touch-callout: none) {
+  /* Target iOS Safari/WebView specifically */
+  
+  /* Force border-radius rendering */
+  [data-radix-dialog-content],
+  [data-radix-alert-dialog-content] {
+    border-radius: 1rem !important;
+    -webkit-border-radius: 1rem !important;
+    /* Force hardware acceleration for smoother rendering */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    /* Ensure proper clipping */
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+  
+  /* Ensure popover content also has proper rounded corners */
+  [data-radix-popover-content] {
+    border-radius: 0.75rem !important;
+    -webkit-border-radius: 0.75rem !important;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+}
+
+.popover-content {
+  touch-action: auto !important;
+}

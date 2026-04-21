@@ -1,0 +1,1 @@
+import{i as e}from"./vendor-Df0EAm1Y.js";export{e as AppWeb};

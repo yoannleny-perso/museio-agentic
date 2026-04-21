@@ -1,0 +1,37 @@
+dependencies: \
+  /Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseMessaging.build/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessaging.m \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Public/FirebaseMessaging/FIRMessaging.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GoogleUtilities.build/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FirebaseCoreInternal.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseCore.build/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRAppInternal.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponent.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponentContainer.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRComponentType.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRHeartbeatLogger.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRLibrary.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseCore/Extension/FIRLogger.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseInstallations/Source/Library/Private/FirebaseInstallationsInternal.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseInstallations.build/module.modulemap \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Interop/FIRMessagingInterop.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingAnalytics.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/Interop/Analytics/Public/FIRAnalyticsInterop.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingCode.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingConstants.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingContextManagerService.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingDefines.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingLogger.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingPubSub.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRemoteNotificationsProxy.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingRmqManager.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingSyncMessageManager.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessagingUtilities.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/FIRMessaging_Private.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/NSError+FIRMessaging.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAuthService.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingCheckinService.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenInfo.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingAPNSInfo.h \
+  /Users/yoann/groove-flow-mobile-app-main/ios/App/Pods/FirebaseMessaging/FirebaseMessaging/Sources/Token/FIRMessagingTokenManager.h

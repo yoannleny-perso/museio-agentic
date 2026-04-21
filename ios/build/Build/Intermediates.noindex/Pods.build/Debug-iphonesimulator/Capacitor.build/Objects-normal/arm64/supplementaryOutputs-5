@@ -1,0 +1,37 @@
+{
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/CAPPlugin+LoadInstance.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPlugin+LoadInstance.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPlugin+LoadInstance.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPlugin+LoadInstance.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPlugin+LoadInstance.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPlugin+LoadInstance.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/CAPPluginCall.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginCall-10a463e4c7cc1a8c06c12c99032d3637.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginCall-10a463e4c7cc1a8c06c12c99032d3637.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginCall-10a463e4c7cc1a8c06c12c99032d3637.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginCall-10a463e4c7cc1a8c06c12c99032d3637.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginCall-10a463e4c7cc1a8c06c12c99032d3637.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/CAPPluginMethod.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginMethod-d6fdd1a5724d9f92455c980a7b4747df.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginMethod-d6fdd1a5724d9f92455c980a7b4747df.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginMethod-d6fdd1a5724d9f92455c980a7b4747df.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginMethod-d6fdd1a5724d9f92455c980a7b4747df.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/CAPPluginMethod-d6fdd1a5724d9f92455c980a7b4747df.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/Data+Capacitor.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Data+Capacitor.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Data+Capacitor.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Data+Capacitor.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Data+Capacitor.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Data+Capacitor.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/@capacitor/ios/Capacitor/Capacitor/Plugins/Console.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Console.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Console.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Console.dia",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Console.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Capacitor.build/Objects-normal/arm64/Console.swiftdeps"
+  }
+}

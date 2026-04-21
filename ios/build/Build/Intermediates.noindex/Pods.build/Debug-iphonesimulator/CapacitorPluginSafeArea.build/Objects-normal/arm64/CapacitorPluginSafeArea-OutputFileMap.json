@@ -1,0 +1,29 @@
+{
+  "" : {
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/CapacitorPluginSafeArea-primary.dia",
+    "emit-module-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/CapacitorPluginSafeArea-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/CapacitorPluginSafeArea-primary-emit-module.dia",
+    "pch" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/CapacitorPluginSafeArea-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/CapacitorPluginSafeArea-primary.swiftdeps"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/capacitor-plugin-safe-area/ios/Sources/SafeAreaPlugin/SafeArea.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.o",
+    "llvm-bc" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.bc",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea.swiftdeps",
+    "swiftmodule" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeArea~partial.swiftmodule"
+  },
+  "/Users/yoann/groove-flow-mobile-app-main/node_modules/capacitor-plugin-safe-area/ios/Sources/SafeAreaPlugin/SafeAreaPlugin.swift" : {
+    "const-values" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.swiftconstvalues",
+    "dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.d",
+    "diagnostics" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.dia",
+    "index-unit-output-path" : "/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.o",
+    "llvm-bc" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.bc",
+    "object" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.o",
+    "swift-dependencies" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin.swiftdeps",
+    "swiftmodule" : "/Users/yoann/groove-flow-mobile-app-main/ios/build/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CapacitorPluginSafeArea.build/Objects-normal/arm64/SafeAreaPlugin~partial.swiftmodule"
+  }
+}

@@ -1,0 +1,4 @@
+
+module CapacitorCommunityFcm.__Swift {
+  exclude header "CapacitorCommunityFcm-Swift.h"
+}
