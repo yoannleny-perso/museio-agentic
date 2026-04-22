@@ -5,6 +5,7 @@ import { Calendar, UserCheck } from 'lucide-react';
 import { usePortfolioTheme } from '@/hooks/usePortfolioTheme';
 import { useModedPortfolioData } from '@/context/PortfolioDataContextModed';
 import { usePortfolioMode } from '@/context/PortfolioModeContext';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { toast } from '@/components/ui/sonner';
 
 const BookingModal = lazy(() => import('./BookingModal'));
@@ -20,7 +21,8 @@ const BookMeSection: React.FC<BookMeSectionProps> = ({
 }) => {
   const { themeColors } = usePortfolioTheme();
   const { data } = useModedPortfolioData();
-  const { userHandle } = usePortfolioMode();
+  const { userHandle, mode } = usePortfolioMode();
+  const isMobile = useIsMobile();
   const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
   const [artistUsername, setArtistUsername] = useState<string>('');
   
@@ -32,6 +34,7 @@ const BookMeSection: React.FC<BookMeSectionProps> = ({
   const buttonText = customOptions.buttonText || 'Book Me';
   const description = customOptions.description || '';
   const buttonStyle = customOptions.buttonStyle || 'primary';
+  const isDesktopLiveCard = mode === 'live' && !isMobile;
 
   const handleBookMeClick = async () => {
     if (isEditMode) {
@@ -74,15 +77,15 @@ const BookMeSection: React.FC<BookMeSectionProps> = ({
         };
       default: // 'primary'
         return {
-          backgroundColor: themeColors.primary,
-          borderColor: themeColors.primary,
+          backgroundColor: isDesktopLiveCard ? '#7B879D' : themeColors.primary,
+          borderColor: isDesktopLiveCard ? '#7B879D' : themeColors.primary,
           color: '#FFFFFF'
         };
     }
   };
 
   return (
-    <div className="text-center space-y-4 py-6">
+    <div className={`text-center space-y-4 ${isDesktopLiveCard ? 'py-2' : 'py-6'}`}>
       {description && (
         <p 
           className="text-lg mb-6 leading-relaxed"
@@ -94,11 +97,12 @@ const BookMeSection: React.FC<BookMeSectionProps> = ({
       
       <Button
         onClick={handleBookMeClick}
-        
-        className={getButtonStyles()}
+        className={`${getButtonStyles()} ${isDesktopLiveCard ? 'rounded-full py-3 text-base shadow-none hover:scale-100 hover:shadow-none' : ''}`}
         style={getButtonStyleProps()}
         onMouseEnter={(e) => {
-          if (buttonStyle === 'primary') {
+          if (isDesktopLiveCard) {
+            e.currentTarget.style.backgroundColor = '#8A96AD';
+          } else if (buttonStyle === 'primary') {
             e.currentTarget.style.backgroundColor = `${themeColors.primary}DD`;
           } else {
             e.currentTarget.style.backgroundColor = `${themeColors.primary}15`;
@@ -109,10 +113,10 @@ const BookMeSection: React.FC<BookMeSectionProps> = ({
           e.currentTarget.style.backgroundColor = styles.backgroundColor;
         }}
       >
-        <div className="flex items-center justify-center gap-3">
-          <UserCheck className="w-6 h-6" />
+        <div className={`flex items-center justify-center ${isDesktopLiveCard ? 'gap-2' : 'gap-3'}`}>
+          <UserCheck className={isDesktopLiveCard ? 'w-5 h-5' : 'w-6 h-6'} />
           <span>{buttonText}</span>
-          <Calendar className="w-6 h-6" />
+          {!isDesktopLiveCard && <Calendar className="w-6 h-6" />}
         </div>
       </Button>
 

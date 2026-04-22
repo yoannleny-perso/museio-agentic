@@ -129,7 +129,12 @@ const PhotoGallery = forwardRef<{ triggerAddPhoto: () => void }, PhotoGalleryPro
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [photoToDelete, setPhotoToDelete] = useState<string | null>(null);
 
-  const shouldUseCarousel = orderedPhotos.length > 4;
+  const isLiveMode = mode === 'live';
+  const galleryColumns = isLiveMode ? 4 : 2;
+  const galleryGapClass = isLiveMode ? 'gap-2' : 'gap-4';
+  const photosPerSlide = isLiveMode ? 8 : 4;
+  const shouldUseCarousel = orderedPhotos.length > photosPerSlide;
+  const galleryGridClass = isLiveMode ? `grid grid-cols-4 ${galleryGapClass}` : `grid grid-cols-2 ${galleryGapClass}`;
 
   const handleDragEnd = async ({ active, over }) => {
     if (!isReorderMode || !over || active.id === over.id) return;
@@ -333,7 +338,7 @@ const PhotoGallery = forwardRef<{ triggerAddPhoto: () => void }, PhotoGalleryPro
   if (photosLoading) {
     return (
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-2 gap-4">
+        <div className={galleryGridClass}>
           {Array.from({ length: 8 }).map((_, i) => (
             <div key={i} className="aspect-square bg-gray-200 rounded-lg animate-pulse" />
           ))}
@@ -359,11 +364,11 @@ const PhotoGallery = forwardRef<{ triggerAddPhoto: () => void }, PhotoGalleryPro
               className="w-full"
             >
               <CarouselContent className="-ml-2">
-                {Array.from({ length: Math.ceil(orderedPhotos.length / 4) }).map((_, slideIndex) => (
+                {Array.from({ length: Math.ceil(orderedPhotos.length / photosPerSlide) }).map((_, slideIndex) => (
                   <CarouselItem key={slideIndex} className="pl-2 basis-11/12">
-                    <div className="grid grid-cols-2 gap-4">
-                      {orderedPhotos.slice(slideIndex * 4, (slideIndex + 1) * 4).map((photo, photoIndex) => {
-                        const actualIndex = slideIndex * 4 + photoIndex;
+                    <div className={galleryGridClass}>
+                      {orderedPhotos.slice(slideIndex * photosPerSlide, (slideIndex + 1) * photosPerSlide).map((photo, photoIndex) => {
+                        const actualIndex = slideIndex * photosPerSlide + photoIndex;
                         return renderPhotoCard(photo, actualIndex, photo.id);
                       })}
                     </div>
@@ -372,13 +377,13 @@ const PhotoGallery = forwardRef<{ triggerAddPhoto: () => void }, PhotoGalleryPro
               </CarouselContent>
             </Carousel>
             <CarouselDots
-              totalSlides={Math.ceil(orderedPhotos.length / 4)}
+              totalSlides={Math.ceil(orderedPhotos.length / photosPerSlide)}
               currentSlide={currentSlide}
               onSlideSelect={handleSlideSelect}
             />
           </>
         ) : (
-          <div className="grid grid-cols-2 gap-4">
+          <div className={galleryGridClass}>
             {orderedPhotos.map((photo, index) => renderPhotoCard(photo, index, photo.id))}
           </div>
         )

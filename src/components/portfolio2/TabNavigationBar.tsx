@@ -5,6 +5,7 @@ import { useModedPortfolioSections } from '@/hooks/useModedPortfolioSections';
 import { usePortfolioMode } from '@/context/PortfolioModeContext';
 import { useModedPortfolioData } from '@/context/PortfolioDataContextModed';
 import { BUILT_IN_SECTION_IDS } from '@/hooks/useModedPortfolioSections';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 interface TabNavigationBarProps {
   onSectionClick: (section: string) => void;
@@ -14,6 +15,7 @@ const TabNavigationBar: React.FC<TabNavigationBarProps> = ({ onSectionClick }) =
   const { themeColors } = usePortfolioTheme();
   const { sections, getSectionTitle } = useModedPortfolioSections();
   const { mode } = usePortfolioMode();
+  const isMobile = useIsMobile();
   const { featuredCards, photos, videos, musicReleases, events } = useModedPortfolioData();
   const [activeTab, setActiveTab] = useState('featured');
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -165,6 +167,39 @@ const TabNavigationBar: React.FC<TabNavigationBarProps> = ({ onSectionClick }) =
   // Hide the entire navigation bar if there are no tabs to show
   if (tabs.length === 0) {
     return null;
+  }
+
+  const isDesktopLiveCard = mode === 'live' && !isMobile;
+
+  if (isDesktopLiveCard) {
+    return (
+      <div className="border-b border-white/10 pb-3">
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 px-2 text-center">
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => handleTabClick(tab.id)}
+              className="text-[12px] font-semibold tracking-[-0.01em] transition-colors"
+              style={{
+                color: activeTab === tab.id ? '#FFFFFF' : 'rgba(248,250,252,0.68)',
+              }}
+              onMouseEnter={(e) => {
+                if (activeTab !== tab.id) {
+                  e.currentTarget.style.color = '#FFFFFF';
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (activeTab !== tab.id) {
+                  e.currentTarget.style.color = 'rgba(248,250,252,0.68)';
+                }
+              }}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
   }
 
   return (

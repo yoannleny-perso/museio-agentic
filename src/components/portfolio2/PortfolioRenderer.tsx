@@ -10,6 +10,7 @@ import { usePortfolioTheme } from '@/hooks/usePortfolioTheme';
 import { useModedPortfolioSections, BUILT_IN_SECTION_IDS } from '@/hooks/useModedPortfolioSections';
 import { useModedPortfolioData } from '@/context/PortfolioDataContextModed';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useModedPortfolioPhoto } from '@/hooks/useModedPortfolioPhoto';
 import { Card } from '@/components/ui/card';
 import { PortfolioMode } from '@/types/portfolio';
 import { cn } from '@/lib/utils';
@@ -175,10 +176,12 @@ const PortfolioRenderer: React.FC<PortfolioRendererProps> = ({ mode }) => {
   const { themeColors, layoutPreferences, getCurrentGradient } = usePortfolioTheme();
   const { sections, loading: sectionsLoading, getSectionTitle, reorderSections } = useModedPortfolioSections();
   const { featuredCards, photos, videos, musicReleases, events } = useModedPortfolioData();
+  const { headerPhoto } = useModedPortfolioPhoto();
   const isMobile = useIsMobile();
 
   const isEditMode = mode === 'edit';
   const isLiveMode = mode === 'live';
+  const isDesktopLiveCard = isLiveMode && !isMobile && !Capacitor.isNativePlatform();
 
   // Determine container styling based on mode and screen size
   const getContainerMaxWidth = () => {
@@ -355,12 +358,17 @@ const PortfolioRenderer: React.FC<PortfolioRendererProps> = ({ mode }) => {
 
   if (sectionsLoading) {
     return (
-      <div className="min-h-screen pb-8 bg-gradient-to-b from-gray-50 to-white">
+      <div className={cn(
+        "min-h-screen pb-8 bg-gradient-to-b from-gray-50 to-white",
+        isDesktopLiveCard && "relative overflow-hidden bg-[#d8d2ce] pb-16"
+      )}>
         <div className={`w-full ${calculateTopPadding()}`} style={{ maxWidth: getContainerMaxWidth() }}>
           <Card
             className={cn(
               "relative w-full",
-              isLiveMode || isEditMode
+              isDesktopLiveCard
+                ? "mx-auto min-h-screen max-w-[548px] rounded-[24px] border-0 bg-[#171f33] shadow-[0_28px_90px_-24px_rgba(15,23,42,0.55)]"
+                : isLiveMode || isEditMode
                 ? "min-h-screen rounded-none border-0 shadow-none"
                 : "rounded-2xl shadow-2xl"
             )}
@@ -377,28 +385,46 @@ const PortfolioRenderer: React.FC<PortfolioRendererProps> = ({ mode }) => {
   }
 
   return (
-    <div className="min-h-screen pb-8 bg-gradient-to-b from-gray-50 to-white">
+    <div
+      className={cn(
+        "min-h-screen pb-8 bg-gradient-to-b from-gray-50 to-white",
+        isDesktopLiveCard && "relative overflow-hidden bg-[#d8d2ce] pb-16"
+      )}
+    >
+      {isDesktopLiveCard && headerPhoto && (
+        <>
+          <div
+            className="pointer-events-none absolute inset-0 scale-110 bg-center bg-cover opacity-90 blur-[34px]"
+            style={{ backgroundImage: `url(${headerPhoto})` }}
+          />
+          <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.42),rgba(216,210,206,0.86)_62%,rgba(216,210,206,0.96)_100%)]" />
+          <div className="pointer-events-none absolute inset-0 bg-[rgba(12,16,28,0.12)]" />
+        </>
+      )}
       <div
         className={cn(
-          "w-full",
+          "relative z-10 w-full",
           getContainerPadding(),
           calculateTopPadding(),
-          isLiveMode && "max-w-none"
+          isLiveMode && "max-w-none",
+          isDesktopLiveCard && "px-6 pt-10"
         )}
         style={{ maxWidth: getContainerMaxWidth() }}
       >
         <Card
           className={cn(
             "relative w-full bg-gradient-transition",
-            getCurrentGradient(),
-            isLiveMode || isEditMode
+            !isDesktopLiveCard && getCurrentGradient(),
+            isDesktopLiveCard
+              ? "mx-auto min-h-screen max-w-[548px] rounded-[24px] border-0 bg-[#171f33] shadow-[0_28px_90px_-24px_rgba(15,23,42,0.55)]"
+              : isLiveMode || isEditMode
               ? "min-h-screen rounded-none border-x-0 border-t-0 shadow-none"
               : "rounded-2xl shadow-2xl"
           )}
           style={{
-            backgroundColor: themeColors.cardBackground,
-            borderColor: themeColors.border,
-            color: themeColors.text
+            backgroundColor: isDesktopLiveCard ? '#171f33' : themeColors.cardBackground,
+            borderColor: isDesktopLiveCard ? 'rgba(255,255,255,0.08)' : themeColors.border,
+            color: isDesktopLiveCard ? '#F8FAFC' : themeColors.text
           }}
         >
           {isEditMode && <BackgroundGradientSelector />}
@@ -407,7 +433,8 @@ const PortfolioRenderer: React.FC<PortfolioRendererProps> = ({ mode }) => {
               isEditMode
                 ? "mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-10"
                 : "p-6",
-              isLiveMode && "mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-10"
+              isLiveMode && "mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-10",
+              isDesktopLiveCard && "mx-auto max-w-[548px] px-5 py-7"
             )}
           >
             <HeroHeader 

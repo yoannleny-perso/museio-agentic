@@ -10,6 +10,12 @@ When smoke credentials and test identifiers are configured, run:
 npm run smoke:critical
 ```
 
+If `STRIPE_WEBHOOK_SECRET` is still unavailable and you want a safe partial run for local/staging validation, use:
+
+```bash
+npm run smoke:critical:skip-stripe
+```
+
 Automated coverage:
 
 1. Sign in
@@ -18,6 +24,14 @@ Automated coverage:
 4. Accept booking request
 5. Send invoice
 6. Stripe payment webhook completion
+
+Partial `--skip-stripe` coverage:
+
+1. Sign in
+2. Submit booking request
+3. Decline booking request
+4. Accept booking request
+5. Send invoice
 
 ## Auth
 

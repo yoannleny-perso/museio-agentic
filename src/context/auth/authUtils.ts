@@ -2,6 +2,10 @@
 import { supabase } from '@/integrations/supabase/client';
 import { useToast } from '@/hooks/use-toast';
 import { useNavigate } from 'react-router-dom';
+import { Capacitor, CapacitorHttp } from '@capacitor/core';
+
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 
 export const useAuthActions = () => {
   const navigate = useNavigate();
@@ -75,6 +79,60 @@ export const useAuthActions = () => {
     try {
       setIsAuthenticating(true);
       cleanupAuthState();
+
+      if (Capacitor.isNativePlatform()) {
+        const response = await CapacitorHttp.request({
+          url: `${SUPABASE_URL}/auth/v1/token`,
+          method: 'POST',
+          params: {
+            grant_type: 'password',
+          },
+          headers: {
+            apikey: SUPABASE_PUBLISHABLE_KEY,
+            'Content-Type': 'application/json',
+            Accept: 'application/json',
+          },
+          data: {
+            email,
+            password,
+          },
+        });
+
+        const responseError =
+          response.status >= 400
+            ? response.data?.error_description ||
+              response.data?.msg ||
+              response.data?.error ||
+              `Request failed with status ${response.status}`
+            : null;
+
+        if (responseError) {
+          setIsAuthenticating(false);
+          throw new Error(responseError);
+        }
+
+        const accessToken = response.data?.access_token;
+        const refreshToken = response.data?.refresh_token;
+
+        if (!accessToken || !refreshToken) {
+          setIsAuthenticating(false);
+          throw new Error('Supabase did not return a valid session.');
+        }
+
+        const { data, error } = await supabase.auth.setSession({
+          access_token: accessToken,
+          refresh_token: refreshToken,
+        });
+
+        if (error) {
+          setIsAuthenticating(false);
+          throw error;
+        }
+
+        void data;
+        navigate('/app/home');
+        return;
+      }
       
       const { data, error } = await supabase.auth.signInWithPassword({
         email,

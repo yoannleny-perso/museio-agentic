@@ -15,6 +15,7 @@
     "typecheck": "tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json",
     "verify:runtime": "node ./scripts/verify-runtime-config.mjs",
     "smoke:critical": "node ./scripts/smoke/critical-flows.mjs",
+    "smoke:critical:skip-stripe": "node ./scripts/smoke/critical-flows.mjs --skip-stripe",
     "preview": "node --localstorage-file=.node-localstorage ./node_modules/vite/bin/vite.js preview",
     "ios:copy": "node ./node_modules/@capacitor/cli/bin/capacitor copy ios",
     "ios:copy:live": "CAPACITOR_LIVE_RELOAD_URL=${CAPACITOR_LIVE_RELOAD_URL:-http://127.0.0.1:8080} node ./node_modules/@capacitor/cli/bin/capacitor copy ios",

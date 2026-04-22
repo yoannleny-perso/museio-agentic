@@ -14,7 +14,10 @@ const normalizeAuthErrorMessage = (error: unknown) => {
         : '';
 
   const message = rawMessage || 'An unexpected authentication error occurred.';
-  const isNetworkFailure = /load failed|failed to fetch|network request failed/i.test(message);
+  const isNetworkFailure =
+    /load failed|failed to fetch|network request failed|tls error|secure connection to fail/i.test(
+      message
+    );
 
   if (!isNetworkFailure) {
     return message;

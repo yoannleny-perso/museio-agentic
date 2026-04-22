@@ -3,6 +3,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createClient } from '@supabase/supabase-js';
 
+const cliArgs = new Set(process.argv.slice(2));
+const skipStripe = cliArgs.has('--skip-stripe');
+
 const projectRoot = process.cwd();
 const envPath = path.join(projectRoot, '.env');
 
@@ -50,9 +53,20 @@ const config = {
   stripeWebhookSecret: getEnv('STRIPE_WEBHOOK_SECRET'),
 };
 
-const missingConfig = Object.entries(config)
-  .filter(([, value]) => !value)
-  .map(([key]) => key);
+const requiredConfigKeys = [
+  'supabaseUrl',
+  'supabaseAnonKey',
+  'supabaseServiceRoleKey',
+  'bookingResponseSecret',
+  'smokeUserEmail',
+  'smokeUserPassword',
+  'smokePublicPortfolioUserId',
+  'smokeBookingCaptchaToken',
+  'smokeClientEmail',
+  ...(skipStripe ? [] : ['stripeWebhookSecret']),
+];
+
+const missingConfig = requiredConfigKeys.filter((key) => !config[key]);
 
 if (missingConfig.length > 0) {
   console.error('[smoke] Missing required configuration:', missingConfig.join(', '));
@@ -245,6 +259,10 @@ const cleanupSmokeData = async () => {
 };
 
 const run = async () => {
+  if (skipStripe) {
+    console.log('[smoke] Running in partial mode: Stripe webhook verification is skipped.');
+  }
+
   logStep('Signing in smoke user');
   const signInResult = await anonClient.auth.signInWithPassword({
     email: config.smokeUserEmail,
@@ -438,6 +456,11 @@ const run = async () => {
   assert(invoiceRecord?.id, 'Invoice record was not created');
   cleanupIds.invoices.add(invoiceRecord.id);
   logPass('Send invoice flow');
+
+  if (skipStripe) {
+    console.log('\nCritical smoke suite completed successfully (Stripe verification skipped).');
+    return;
+  }
 
   logStep('Completing Stripe webhook flow');
   const { data: invoicePayment, error: invoicePaymentError } = await adminClient

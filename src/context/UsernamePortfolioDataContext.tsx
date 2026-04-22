@@ -274,21 +274,25 @@ export const UsernamePortfolioDataProvider: React.FC<{
 
         const portfolioData = portfolioDataByUserId as any;
 
-        // If no profile_image_url in settings, try to get header photo from portfolio_photos
-        let headerPhotoUrl = portfolioData?.profile_image_url as string | null | undefined;
-        
-        if (!headerPhotoUrl) {
-          const { data: headerPhoto, error: photoError } = await supabase
-            .from('portfolio_photos')
-            .select('image_url')
-            .eq('user_id', userId)
-            .eq('display_order', 0)
-            .abortSignal(abortControllerRef.current?.signal)
-            .maybeSingle();
+        // Prefer the dedicated header/portrait photo slot over any older
+        // settings metadata so the live hero always reflects the real portrait.
+        let headerPhotoUrl: string | null | undefined = null;
 
-          if (!photoError && headerPhoto) {
-            headerPhotoUrl = headerPhoto.image_url;
-          }
+        const { data: headerPhoto, error: photoError } = await supabase
+          .from('portfolio_photos')
+          .select('image_url')
+          .eq('user_id', userId)
+          .eq('display_order', 0)
+          .abortSignal(abortControllerRef.current?.signal)
+          .maybeSingle();
+
+        if (!photoError && headerPhoto?.image_url) {
+          headerPhotoUrl = headerPhoto.image_url;
+        }
+
+        // Fall back to portfolio_settings only when no dedicated header exists.
+        if (!headerPhotoUrl) {
+          headerPhotoUrl = portfolioData?.profile_image_url as string | null | undefined;
         }
 
         // If still no header photo, use the first available photo

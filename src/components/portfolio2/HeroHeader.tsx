@@ -6,6 +6,7 @@ import { useSocialMediaLinks } from '@/hooks/useSocialMediaLinks';
 import { useLiveSocialMediaLinks } from '@/hooks/useLiveSocialMediaLinks';
 import { usePortfolioTheme } from '@/hooks/usePortfolioTheme';
 import { usePortfolioMode } from '@/context/PortfolioModeContext';
+import { useIsMobile } from '@/hooks/use-mobile';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import SocialMediaIcons from '@/components/portfolio2/SocialMediaIcons';
 import PortfolioPhotoSection from '@/components/portfolio2/PortfolioPhotoSection';
@@ -24,6 +25,7 @@ const HeroHeader: React.FC<HeroHeaderProps> = ({ onSectionClick, isEditMode = fa
   const { headerPhoto, fetchHeaderPhoto, uploadPhoto, deletePhoto, uploading, loading: photoLoading } = useModedPortfolioPhoto();
   const { artistName, loading: artistLoading, saveArtistName } = useArtistName();
   const { mode, userHandle } = usePortfolioMode();
+  const isMobile = useIsMobile();
   
   // Use different hooks based on mode
   const editModeData = useSocialMediaLinks();
@@ -38,6 +40,7 @@ const HeroHeader: React.FC<HeroHeaderProps> = ({ onSectionClick, isEditMode = fa
   const { selectedGradient } = usePortfolioTheme();
   const [showFullBio, setShowFullBio] = useState(false);
   const [isEditingFullBio, setIsEditingFullBio] = useState(false);
+  const isDesktopLiveCard = isLiveMode && !isMobile;
 
   const isDarkGradient = ['dark-purple', 'dark-blue', 'dark-navy', 'dark-emerald', 'dark-rose'].includes(selectedGradient);
   const heroTitleColor = isDarkGradient ? '#F8FAFC' : '#0F172A';
@@ -64,7 +67,57 @@ const HeroHeader: React.FC<HeroHeaderProps> = ({ onSectionClick, isEditMode = fa
   return (
     <TooltipProvider>
       <div className="pb-0 text-center relative">
-        {headerPhoto ? (
+        {headerPhoto && isDesktopLiveCard ? (
+          <div className="mb-4">
+            <div className="mx-auto mb-5 max-w-[288px]">
+              <PortfolioPhotoSection
+                isEditMode={isEditMode}
+                headerPhotoOverride={headerPhoto}
+                uploadingOverride={uploading}
+                loadingOverride={photoLoading}
+                uploadPhotoOverride={uploadPhoto}
+                deletePhotoOverride={deletePhoto}
+                fetchHeaderPhotoOverride={fetchHeaderPhoto}
+              />
+            </div>
+
+            <ArtistNameDisplay
+              artistName={artistName}
+              loading={artistLoading}
+              onSave={saveArtistName}
+              isEditMode={isEditMode}
+              variant="hero"
+              textColorOverride="#F8FAFC"
+              textShadow="0 4px 24px rgba(15,23,42,0.42)"
+            />
+
+            <ShortBioDisplay
+              onToggleBio={handleToggleBio}
+              showFullBio={showFullBio}
+              isEditMode={isEditMode}
+              isEditingFullBio={isEditingFullBio}
+              variant="hero"
+              textColorOverride="rgba(248,250,252,0.72)"
+              textShadow="0 2px 18px rgba(15,23,42,0.38)"
+            />
+
+            <div className="mt-2">
+              <SocialMediaIcons
+                socialLinks={socialLinks}
+                loading={socialLoading}
+                onUpdateLink={updateSocialLink}
+                onSaveLinks={saveSocialLinks}
+                onReorderLinks={reorderSocialLinks}
+                isEditMode={isEditMode}
+                compactEmptyState
+              />
+            </div>
+
+            <div className="mt-5">
+              <TabNavigationBar onSectionClick={onSectionClick} />
+            </div>
+          </div>
+        ) : headerPhoto ? (
           <div className="-mx-4 -mt-6 mb-4 md:mx-0 md:mt-0">
             <div className="relative">
               <PortfolioPhotoSection
@@ -185,8 +238,9 @@ const HeroHeader: React.FC<HeroHeaderProps> = ({ onSectionClick, isEditMode = fa
           </>
         )}
 
-        {/* Tab Navigation - now positioned inside hero header */}
-        <TabNavigationBar onSectionClick={onSectionClick} />
+        {!isDesktopLiveCard && (
+          <TabNavigationBar onSectionClick={onSectionClick} />
+        )}
       </div>
     </TooltipProvider>
   );
