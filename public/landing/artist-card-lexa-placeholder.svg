@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="472" height="680" viewBox="0 0 472 680" fill="none">
+  <rect width="472" height="680" rx="28" fill="url(#a)"/>
+  <text x="236" y="566" fill="white" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">Lexa</text>
+  <text x="236" y="616" fill="white" fill-opacity=".75" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">artist-card-lexa.png</text>
+  <defs><linearGradient id="a" x1="0" y1="0" x2="472" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#FF8B6E"/><stop offset="1" stop-color="#7E0048"/></linearGradient></defs>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" fill="none">
+  <rect width="1200" height="860" rx="48" fill="#F6F1FF"/>
+  <rect x="160" y="136" width="338" height="390" rx="30" fill="url(#a)"/>
+  <rect x="454" y="188" width="272" height="136" rx="22" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <rect x="542" y="350" width="270" height="152" rx="22" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <rect x="310" y="544" width="292" height="126" rx="22" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <text x="600" y="748" fill="#7A56D8" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">feature-admin-collage.png</text>
+  <defs>
+    <linearGradient id="a" x1="160" y1="136" x2="498" y2="526" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B85CDD"/>
+      <stop offset="1" stop-color="#5A1FBA"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="860" viewBox="0 0 1200 860" fill="none">
+  <rect width="1200" height="860" rx="48" fill="#F4EEFF"/>
+  <rect x="676" y="88" width="358" height="260" rx="26" fill="url(#a)"/>
+  <rect x="530" y="190" width="420" height="310" rx="26" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <rect x="720" y="384" width="300" height="168" rx="22" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <rect x="612" y="452" width="190" height="116" rx="22" fill="#FFFFFF" stroke="#E3D6FF"/>
+  <text x="600" y="710" fill="#7A56D8" font-family="Arial, sans-serif" font-size="42" font-weight="700" text-anchor="middle">feature-growth-collage.png</text>
+  <defs>
+    <linearGradient id="a" x1="676" y1="88" x2="1034" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B96AF4"/>
+      <stop offset="1" stop-color="#5E24BF"/>
+    </linearGradient>
+  </defs>
+</svg>

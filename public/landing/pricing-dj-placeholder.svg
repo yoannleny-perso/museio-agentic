@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780" fill="none">
+  <rect width="1200" height="780" fill="url(#a)"/>
+  <rect x="88" y="82" width="1024" height="616" rx="36" fill="#FFFFFF" fill-opacity=".08" stroke="white" stroke-opacity=".2"/>
+  <text x="600" y="406" fill="white" font-family="Arial, sans-serif" font-size="54" font-weight="700" text-anchor="middle">pricing-dj-photo.png</text>
+  <defs><linearGradient id="a" x1="0" y1="0" x2="1200" y2="780" gradientUnits="userSpaceOnUse"><stop stop-color="#BB58E0"/><stop offset="1" stop-color="#5920BA"/></linearGradient></defs>
+</svg>

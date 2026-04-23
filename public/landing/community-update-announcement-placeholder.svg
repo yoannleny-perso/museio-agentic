@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="430" viewBox="0 0 700 430" fill="none">
+  <rect width="700" height="430" rx="22" fill="url(#a)"/>
+  <text x="350" y="236" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">community-update-announcement.png</text>
+  <defs><linearGradient id="a" x1="0" y1="0" x2="700" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#FF493B"/><stop offset="1" stop-color="#7A001C"/></linearGradient></defs>
+</svg>

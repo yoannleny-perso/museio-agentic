@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="620" viewBox="0 0 500 620" fill="none">
+  <rect width="500" height="620" rx="28" fill="#FFFFFF"/>
+  <rect x="28" y="28" width="444" height="300" rx="22" fill="url(#a)"/>
+  <rect x="60" y="98" width="380" height="160" rx="18" fill="#FFFFFF" fill-opacity=".92"/>
+  <text x="250" y="520" fill="#7A56D8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">booking-placeholder.png</text>
+  <defs><linearGradient id="a" x1="28" y1="28" x2="472" y2="328" gradientUnits="userSpaceOnUse"><stop stop-color="#C973DF"/><stop offset="1" stop-color="#7E43D8"/></linearGradient></defs>
+</svg>

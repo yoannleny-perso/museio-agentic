@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="620" viewBox="0 0 500 620" fill="none">
+  <rect width="500" height="620" rx="28" fill="#FFFFFF"/>
+  <rect x="28" y="28" width="444" height="300" rx="22" fill="#F3EDFF" stroke="#E2D5FF"/>
+  <rect x="60" y="84" width="380" height="204" rx="18" fill="#FFFFFF"/>
+  <text x="250" y="520" fill="#7A56D8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">calendar-placeholder.png</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="620" viewBox="0 0 500 620" fill="none">
+  <rect width="500" height="620" rx="28" fill="#FFFFFF"/>
+  <rect x="28" y="28" width="444" height="300" rx="22" fill="#F5F0FF" stroke="#E2D5FF"/>
+  <circle cx="160" cy="184" r="74" fill="#8D63FF" fill-opacity=".18"/>
+  <rect x="264" y="118" width="112" height="132" rx="18" fill="#FFFFFF"/>
+  <text x="250" y="520" fill="#7A56D8" font-family="Arial, sans-serif" font-size="28" font-weight="700" text-anchor="middle">finance-placeholder.png</text>
+</svg>

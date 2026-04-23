@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1200" viewBox="0 0 800 1200" fill="none">
+  <rect width="800" height="1200" rx="90" fill="url(#bg)"/>
+  <rect x="56" y="56" width="688" height="1088" rx="72" fill="#1D0F35" fill-opacity=".12" stroke="white" stroke-opacity=".35"/>
+  <text x="400" y="470" fill="white" font-family="Arial, sans-serif" font-size="48" font-weight="700" text-anchor="middle">Replace with</text>
+  <text x="400" y="540" fill="white" font-family="Arial, sans-serif" font-size="34" text-anchor="middle">hero-artist-phone.png</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B85CDD"/>
+      <stop offset="1" stop-color="#5A1FBA"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Outfit';
+  src: url("/landing/Other/FONT_%20Outfit/Outfit-VariableFont_wght.ttf") format('truetype');
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;
@@ -91,6 +99,15 @@
 
 .font-emerald {
   font-family: 'Emilys Candy', cursive;
+}
+
+.font-landing-outfit {
+  font-family: 'Outfit', 'Inter', sans-serif;
+}
+
+.font-landing-outfit,
+.font-landing-outfit * {
+  font-family: 'Outfit', 'Inter', sans-serif;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

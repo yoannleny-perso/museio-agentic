@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="1060" viewBox="0 0 820 1060" fill="none">
+  <rect width="820" height="1060" rx="24" fill="url(#a)"/>
+  <rect x="90" y="84" width="640" height="892" rx="24" fill="#FFFFFF" fill-opacity=".14" stroke="white" stroke-opacity=".28"/>
+  <text x="410" y="360" fill="white" font-family="Arial, sans-serif" font-size="46" font-weight="700" text-anchor="middle">How to start my</text>
+  <text x="410" y="430" fill="white" font-family="Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle">DJ Business</text>
+  <text x="410" y="760" fill="white" fill-opacity=".86" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">Replace with ebook-cover.png</text>
+  <defs><linearGradient id="a" x1="0" y1="0" x2="820" y2="1060" gradientUnits="userSpaceOnUse"><stop stop-color="#A973F6"/><stop offset="1" stop-color="#5A1FBA"/></linearGradient></defs>
+</svg>
