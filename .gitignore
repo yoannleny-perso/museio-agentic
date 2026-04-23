@@ -24,6 +24,9 @@ ios/build
 ios/App/build
 *.local
 .node-localstorage
+.node-localstorage-shm
+.node-localstorage-wal
+_proto_figma
 .tmp-playwright
 test-results
 supabase/.temp
